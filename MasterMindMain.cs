@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+
 using System.Text;
 using System.Linq;
 
@@ -19,8 +19,6 @@ namespace MasterMind
         
         public string Evaluate(string myAttempt)
 		{
-            Console.WriteLine("The answer is: " + _answer);
-
             // Ensure that a correct sized digit only value was entered
             if ((myAttempt.Length != _answerSize) || (!myAttempt.All(char.IsDigit)))
                 return ("Invalid value entered.");
@@ -48,10 +46,6 @@ namespace MasterMind
             }
             return (attemptString.ToString());
 
-        }
-
-
-
-
+        }                     
 	}	   
 }

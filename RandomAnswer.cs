@@ -21,7 +21,6 @@ namespace MasterMind
 				answerString.Append(_randomNumber.Next(start, end));
 			}
 			Answer = answerString.ToString();
-
 		}
 	}
 }

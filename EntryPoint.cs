@@ -66,7 +66,7 @@ namespace MasterMind
             } while (tries < 10);
    
             //Alert the player if the maximum turns have elapsed without finding the correct answer
-            if (result != "++++")
+            if (tries == 10)
                 Console.WriteLine("Maximum attempts reached.  Thank you for playing.");
         }
     }
