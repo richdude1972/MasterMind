@@ -33,7 +33,6 @@ namespace MasterMind
             int tries = 0;
             do
             {
-
                 Console.Write("Attempt: ");
                 var attempt = Console.ReadLine();
 
